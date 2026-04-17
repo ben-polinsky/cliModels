@@ -6,7 +6,7 @@ import {
   type SceneDocument,
 } from "../render.js";
 
-const USAGE = `Usage: pnpm --filter @itwin-experiments/cli-model cli -- <path-to-imodel> [options]
+const USAGE = `Usage: npx cli-model <path-to-imodel> [options]
 
 Options:
   --max-elements <count>  Limit displayed elements per model (default: 200)

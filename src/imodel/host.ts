@@ -68,7 +68,7 @@ async function ensureIModelHost(): Promise<void> {
   }
 
   await IModelHost.startup({
-    cacheDir: join(tmpdir(), "itwinjs-core-big-experiments-cli-model-cache"),
+    cacheDir: join(tmpdir(), "cli-model-cache"),
     profileName: `cli-model-${process.pid}`,
   });
   hostStarted = true;

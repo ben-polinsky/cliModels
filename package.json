@@ -1,5 +1,5 @@
 {
-  "name": "@itwin-experiments/cli-model",
+  "name": "cli-models",
   "version": "0.0.0",
   "private": true,
   "description": "Interactive terminal experiment for representing iModels in a CLI app.",
@@ -28,7 +28,6 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@itwin-experiments/experiment-core": "workspace:*",
     "@itwin/core-backend": "5.8.0",
     "@itwin/core-bentley": "5.8.0",
     "@itwin/core-common": "5.8.0",

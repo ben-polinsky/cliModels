@@ -15,10 +15,10 @@ The current first slice is backend-first and favors a thin dependency stack over
 ## Commands
 
 ```sh
-pnpm --filter @itwin-experiments/cli-model build
-pnpm --filter @itwin-experiments/cli-model cli -- ./path/to/model.bim
-pnpm --filter @itwin-experiments/cli-model cli -- ./path/to/model.bim --hidden-lines
-pnpm --filter @itwin-experiments/cli-model typecheck
+npm run build
+npm run cli -- ./path/to/model.bim
+npm run cli -- ./path/to/model.bim --hidden-lines
+npm run typecheck
 ```
 
 ## Controls
@@ -42,5 +42,4 @@ pnpm --filter @itwin-experiments/cli-model typecheck
 - The viewer currently focuses on local files that backend APIs can open directly from disk.
 - This is an experiment in representation. Expect coarse spatial readability, not viewer-grade fidelity.
 
-- Keep dependencies local to this experiment unless another experiment needs the same code.
-- If shared code becomes useful elsewhere, promote it into `packages/*` and add it back with a `workspace:*` dependency.
+- Keep dependencies minimal and local to this project.
