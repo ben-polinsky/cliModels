@@ -2,6 +2,8 @@
 
 Interactive terminal experiment for opening local iModels and projecting them into an ANSI terminal view.
 
+![Image of a courtyard house iModel rendered in the terminal](courtyard-house.png)
+
 ## Goal
 
 `cli-model` treats the terminal like a deliberately low-fidelity viewport:
